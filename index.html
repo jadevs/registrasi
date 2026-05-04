@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GKSBS Event — Digital Invitation</title>
-    <meta name="title" content="Undangan Ibadah Kebangkitan Tuhan Yesus GKSBS">
+    <meta name="title" content="Undangan Ibadah Kenaikan Tuhan Yesus GKSBS">
     <meta name="description" content="Melayani dengan Kasih dan Kesetiaan dalam satu persekutuan. Mohon kehadiran Bapak/Ibu/Saudara/i.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gksbstaka.github.io/undangan-rsvp/">
-    <meta property="og:title" content="Undangan Ibadah Kebangkitan Tuhan Yesus GKSBS">
-    <meta property="og:description" content="Tema Ibadah Kebangkitan Tuhan Yesus">
+    <meta property="og:title" content="Undangan Ibadah Kenaikan Tuhan Yesus GKSBS">
+    <meta property="og:description" content="Tema Ibadah Kenaikan Tuhan Yesus">
     <meta property="og:image" content="https://gksbstaka.github.io/undangan-rsvp/assets/img/thumbnail.png">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://gksbstaka.github.io/undangan-rsvp/">
-    <meta property="twitter:title" content="Undangan Ibadah Kebangkitan Tuhan Yesus GKSBS">
+    <meta property="twitter:title" content="Undangan Ibadah Kenaikan Tuhan Yesus GKSBS">
     <meta property="twitter:description" content="Melayani dengan Kasih dan Kesetiaan dalam satu persekutuan.">
     <meta property="twitter:image" content="https://gksbstaka.github.io/undangan-rsvp/assets/img/thumbnail.png">
     
@@ -28,13 +27,10 @@
         theme: {
             extend: {
                 fontFamily: {
-                    // Default utama ke Inter (Sans Serif)
-                    // Serif hanya disiapkan sebagai class opsional
                     sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
                     serif: ['Playfair Display', 'serif'],
                 },
                 fontSize: {
-                    // Apple-style typography scale
                     'ap-hero': ['4.5rem', { lineHeight: '1.05', letterSpacing: '-0.025em', fontWeight: '700' }],
                     'ap-title': ['2.5rem', { lineHeight: '1.2', letterSpacing: '-0.02em', fontWeight: '600' }],
                     'ap-body': ['1.0625rem', { lineHeight: '1.5', letterSpacing: '-0.01em' }],
@@ -46,43 +42,32 @@
 </script>
 
 <style>
-    /* Reset & Master Typography */
     body { 
         @apply font-sans antialiased bg-ap-bg text-ap-black; 
     }
-
-    /* Override semua heading ke Sans Serif secara default */
     h1, h2, h3, h4, h5, h6 { 
         @apply font-sans tracking-tight; 
     }
-
-    /* Utility untuk panggil Serif secara kondisional (Manual) */
     .font-conditional-serif { 
         @apply font-serif italic; 
     }
-
-    /* Sub-header style */
     .ap-sub { 
         @apply text-ap-caption uppercase tracking-[0.3em] text-ap-grey block mb-4; 
     }
 </style>
     <style>
-        /* Global Smoothing */
         body {
             background-color: #ffffff;
             color: #1D1D1F;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-
-        /* Master UI Components */
         .ap-card {
             background: #f5f5f7;
             border: 1px solid rgba(210, 210, 215, 0.4);
             border-radius: 32px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
         }
-
         .ap-btn-primary {
             background-color: #0071E3;
             color: #FFFFFF;
@@ -98,8 +83,6 @@
         .ap-btn-primary:active {
             transform: scale(0.98);
         }
-
-        /* Input Style: Minimalist Apple */
         .ap-input {
             width: 100%;
             background-color: #F5F5F7;
@@ -114,8 +97,6 @@
             border-color: #0071E3;
             box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1);
         }
-
-        /* Micro-animations */
         @keyframes reveal {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -146,22 +127,22 @@
     <div class="relative z-20 flex flex-col items-center text-center p-6 reveal">
         
         <div class="mb-10 flex flex-col items-center">
-        <img src="assets/img/logo.svg" class="w-28 md:w-32 mx-auto mb-6 brightness-0 invert opacity-90" alt="Logo">
-    
-        <span class="ap-sub !text-white !mb-1 font-medium tracking-[0.3em] uppercase">
-        GKSBS Tanjungkarang
-        </span>
-    
-        <span class="text-white/60 font-medium italic !text-[14px] tracking-wide">
-        "Gereja yang Menjadi Berkat bagi Masyarakat"
-        </span>
-    </div>
+            <img src="assets/img/logo.svg" class="w-28 md:w-32 mx-auto mb-6 brightness-0 invert opacity-90" alt="Logo">
+        
+            <span class="ap-sub !text-white !mb-1 font-medium tracking-[0.3em] uppercase">
+                GKSBS Tanjungkarang
+            </span>
+        
+            <span class="text-white/60 font-medium italic !text-[14px] tracking-wide">
+                "Gereja yang Menjadi Berkat bagi Masyarakat"
+            </span>
+        </div>
         
         <div class="mb-10">
             <h1 class="text-ap-title text-white tracking-[0.1em] !text-[45px]">
-                UNDANGAN <span class="font-sans font-semibold text-white/100">RAPAT</span>
+                IBADAH <span class="font-sans font-semibold text-white/100">KENAIKAN</span>
             </h1>
-                <p id="event-time-info" class="mt-4 text-ap-body max-w-sm mx-auto font-light text-white/70">
+            <p id="event-time-info" class="mt-4 text-ap-body max-w-sm mx-auto font-light text-white/70">
                 </p>
         </div>
 
@@ -202,15 +183,17 @@
         </div>
     </div>
 </section>
+
 <script>
-    const targetDateStr = "April 1, 2026 09:00:00";
+    // Update target tanggal ke 14 Mei 2026 Pukul 08:00
+    const targetDateStr = "May 14, 2026 08:00:00";
     const targetDate = new Date(targetDateStr).getTime();
 
     function updateEventText() {
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
         const dateObj = new Date(targetDateStr);
         const formattedDate = dateObj.toLocaleDateString('id-ID', options);
-        document.getElementById("event-time-info").innerText = formattedDate + " WIB";
+        document.getElementById("event-time-info").innerText = formattedDate + " WIB s.d Selesai";
     }
 
     updateEventText();
@@ -240,26 +223,21 @@
         }
     }, 1000);
 </script>
+
 <script>
-    const scriptURL = '#';
+    const scriptURL = '#'; // Masukkan URL Google Apps Script lu di sini bre
 
     function updateGuestCount() {
-    
+        if (scriptURL === '#') return;
         const cacheBuster = new Date().getTime();
         const script = document.createElement('script');
-        
-        // Kita gunakan teknik JSONP untuk melewati blokir CORS browser
         script.src = `${scriptURL}?callback=handleResponse&t=${cacheBuster}`;
-        
-        // Menangani jika script gagal dimuat (misal URL salah atau server down)
         script.onerror = function() {
             console.error("Gagal memuat data dari Google Script. Cek URL Deployment kamu.");
         };
-
         document.body.appendChild(script);
     }
 
-    // Fungsi ini yang akan menerima data dari Google Apps Script
     function handleResponse(data) {
         const countElement = document.getElementById('guestCount');
         if (countElement && data && typeof data.count !== 'undefined') {
@@ -270,10 +248,8 @@
         }
     }
 
-    // Jalankan fungsi saat halaman selesai dimuat
     window.addEventListener('load', updateGuestCount);
 </script>
-
 
 </body>
 </html>
