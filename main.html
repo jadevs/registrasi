@@ -146,29 +146,18 @@
         window.addEventListener("scroll", reveal);
         reveal();
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMDERfnXSaeGZU7rggHcvoTEhQWdrdDNX3tDUOrkq-80PytfM4wHgHQbrPAOeRLIQn/exec';
-        const form = document.getElementById('formRSVP');
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const btn = form.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = "MENGIRIM...";
-            btn.disabled = true;
-            const data = {};
-            new FormData(form).forEach((value, key) => data[key] = value);
-            fetch(scriptURL, { method: 'POST', mode: 'no-cors', cache: 'no-cache', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
-            .then(() => {
-    Swal.fire({
-        title: 'Terimakasih',
-        text: 'Tuhan Yesus Memberkati ❤️',
-        icon: 'success',
-        confirmButtonColor: '#0071E3',
-        confirmButtonText: 'OK',
-        customClass: {
-            popup: 'rounded-[25px]', // Biar ujungnya melengkung halus ala Apple
-        }
-    });
-    form.reset();
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwv8G2BtrAwF9S5wfHzULuDxhFKL5cQULtt79zv0-AhqV-8hjSA0kWO04du-k53dcp2/exec';
+        const form = document.getElementById('formRegister');    
+          <form id="formRegister" class="space-y-4 max-w-sm mx-auto lg:mx-0 w-full">
+    <input type="text" name="full_name" placeholder="Nama Lengkap" required class="ap-input">
+    <input type="email" name="email" placeholder="Email aktif" required class="ap-input">
+    <input type="tel" name="phone" placeholder="Nomor WhatsApp" required class="ap-input">
+    <input type="password" name="password" placeholder="Buat Password" required class="ap-input">
+    
+    <div class="text-center lg:text-left mt-4">
+        <button type="submit" class="inline-block bg-[#0071E3] text-white px-10 py-4 rounded-full text-[11px] font-bold tracking-[0.2em] uppercase">Daftar Akun Jemaat</button>
+    </div>
+</form>
     btn.innerText = originalText;
     btn.disabled = false;
 })
